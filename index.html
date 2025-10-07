@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+      </script>
+        <title>BetterWaste Replica</title>
+    </head>
+
+<body>
+    <header>
+    <nav class="overflow-x-hidden">
+     <div>
+        <div class=" ">
+            <div class=" position-fixed w-100 px-3 py-3 bg-white box box-shadow" style="z-index: 100;">
+                <div class="d-flex align-items-center px-md-5 mb-0" style="list-style: none;">
+                    <div class="text-decoration-none">
+                         <img class="d-none d-lg-block" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/logo.webp" alt="">
+                         <img class="d-block d-lg-none" style="max-width:100px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/logo.webp" alt="">
+                        </div>
+                    <ul class="d-none d-lg-flex ms-auto dark-blue-text fw-bold mb-0 list-unstyled gap-4">
+                     <li>About Us</li>
+                     <li>Binpedia</li>
+                     <li class="position-relative">Sectors
+                        <ul class="d-none list-unstyled bg-white position-absolute ps-4 box-shadow text-black fw-light" style="">
+                            <li class="mt-3">Barbers</li>
+                            <li class="mt-3" >Cafes</li>
+                            <li class="mt-3" >Hairdressers</li>
+                            <li class="mt-3" >Hotel</li>
+                            <li class="mt-3" >Office</li>
+                            <li class="mt-3" >Pub </li>
+                            <li class="mt-3" >Retail</li>
+                            <li class="mt-3" >School</li>
+                            <li class="my-3" >Takeaway</li>
+                        </ul>
+
+                     </li>
+                     <li class="position-relative">Waste Type
+                        <ul class="d-none list-unstyled bg-white position-absolute ps-4 box-shadow text-black fw-light" style="">
+                            <li class="mt-3">General Waste</li>
+                            <li class="mt-3" >Dry Waste</li>
+                            <li class="mt-3" >Paper and Cardboard Waste</li>
+                            <li class="mt-3" >Food Waste</li>
+                            <li class="my-3" >Glass Waste</li>
+                          
+                        </ul>
+                     </li>
+                     <li class="position-relative ">Areas We Cover
+                        <ul class="d-none list-unstyled bg-white position-absolute ps-4 box-shadow text-black fw-light" style="">
+                            <li class="mt-3">North East</li>
+                            <li class="mt-3" >North West</li>
+                            <li class="mt-3" >Yorkshire</li>
+                            <li class="mt-3" >South East</li>
+                            <li class="mt-3" >South West</li>
+                            <li class="mt-3" >Midlands</li>
+                            <li class="mt-3" >London </li> 
+                            <li class="mt-3" >Scotland </li> 
+                            <li class="my-3" >Wales </li> 
+                        </ul>
+                     </li>
+                     <li>FAQs</li>
+                     <li>Blog</li>
+                     <li>Contact Us</li>
+                     <li>Customer Portal</li>
+                    </ul>
+                    <div class="text-decoration-none ms-auto ms-md-4 "> <button class="green-button p-2 px-md-3 py-md-3">Request A Quote</button></div>
+                    <div class="text-decoration-none ms-auto d-block d-lg-none"> 
+                     <div class="hamburger-container d-flex flex-column align-items-center justify-content-center">
+                     <div style="width:20px; height:4px; background-color: #1ea19a; "></div>
+                     <div style="width:20px; height:4px; background-color: #1ea19a; margin-top: 5px;"></div>
+                     <div style="width:20px; height:4px; background-color: #1ea19a; margin-top: 5px;"></div>
+                    </div>
+                </div>
+
+                <div id="mobile-nav" class="left-100 position-fixed d-block d-lg-none w-75 top-0 bottom-0 dark-blue-background py-4 overflow-y-a" style=" transition: 1s; "> 
+                   <ul class="list-unstyled text-white">
+                    <li>About Us</li>
+                    <li class="mt-3"> Binpedia</li>
+                    <li onclick="showNav(this)" class="mt-3">Sectors
+                        <ul class="d-none  list-unstyled  ps-4 fw-light" style="">
+                            <li class="mt-3">Barbers</li>
+                            <li class="mt-3" >Cafes</li>
+                            <li class="mt-3" >Hairdressers</li>
+                            <li class="mt-3" >Hotel</li>
+                            <li class="mt-3" >Office</li>
+                            <li class="mt-3" >Pub </li>
+                            <li class="mt-3" >Retail</li>
+                            <li class="mt-3" >School</li>
+                            <li class="my-3" >Takeaway</li>
+                        </ul>
+                    </li>
+                    <li onclick="showNav(this)" class="mt-3">Waste Type
+                        <ul class="d-none list-unstyled  ps-4 fw-light" style="">
+                            <li class="mt-3">General Waste</li>
+                            <li class="mt-3" >Dry Waste</li>
+                            <li class="mt-3" >Paper and Cardboard Waste</li>
+                            <li class="mt-3" >Food Waste</li>
+                            <li class="my-3" >Glass Waste</li>
+                        </ul>
+                    </li>
+                    <li onclick="showNav(this)" class="mt-3 ">Areas We Cover
+
+                        <ul class="d-none list-unstyled  ps-4 fw-light" style="">
+                            <li class="mt-3">North East</li>
+                            <li class="mt-3" >North West</li>
+                            <li class="mt-3" >Yorkshire</li>
+                            <li class="mt-3" >South East/li>
+                            <li class="mt-3" >South West</li>
+                            <li class="mt-3" >Midlands</li>
+                            <li class="mt-3" >London </li> 
+                            <li class="mt-3" >Scotland </li> 
+                            <li class="my-3" >Wales </li> 
+                        </ul>
+                    </li>
+                    <li class="mt-3">FAQs</li>
+                     <li class="mt-3">Blog</li>
+                     <li class="mt-3">Contact Us</li>
+                     <li class="mt-3">Customer Portal</li>
+                   </ul>
+               </div>
+<script>
+function showNav(element){
+element.firstElementChild.classList.toggle('d-none');
+}
+
+
+
+
+  let hamburger= document.querySelector(".hamburger-container");
+  let mobil_nav=document.getElementById("mobile-nav");
+   hamburger.addEventListener('click',()=> {
+    mobil_nav.classList.toggle("left-100");
+    mobil_nav.classList.toggle("left-0");
+   });
+</script>
+            </div>
+        </div>
+     </div>
+     </div>
+    </nav>
+
+</header>
+
+    <main>
+   <section class="header-padding ">
+    <button class="position-fixed side-bar text-center"> 
+        <span> <img style="max-width:76px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/10/Feefo_logo.svg" alt=""></span>
+    </button>
+    <div class="d-flex position-fixed end-0  d-block p-3 text-white cookie-button" style=" z-index:97;">Cookie Settings </div>
+    <div class="d-flex hamburger-fixed flex-column position-fixed end-0 d-block d-lg-none p-3 green-background text-white " style="    bottom: 22%; z-index:97;"> 
+    <div class=" bg-white" style="height:3px; width:40px;"></div>
+    <div class=" bg-white mt-1" style="height:3px; width:40px;"></div>
+    <div class=" bg-white mt-1" style="height:3px; width:40px;"></div>
+    </div>
+
+    <div class="d-flex position-fixed w-100 bottom-0 bg-black d-block d-md-none" style="z-index:97;">
+  
+            
+      
+    <div class="col-6  py-3 dark-blue-background text-center" >
+
+        <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/envelope.png" alt="">
+
+    </div>
+    <div class="col-6 py-3 green-background text-center" > 
+
+        <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/phone.png" alt="">
+    </div>
+</div>
+
+
+<div class="col-10 col-lg-6 m-auto overflow-hidden" style="background: #f3f4f6;">
+
+  <form action="" method="POST">
+ <div class="slider d-flex w-100" style="transition: transform 0.6s ease-in-out;">  <!-- opening slider-->
+    <div class="step " style="min-width:100%; ">
+      <div class="text-center dark-blue-text py-3">
+        <h1>
+        Get a free quote
+        </h1>
+<div>bar goes here</div>
+
+<p> what type of what would you like to disspose of? </p>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <label class="col-6 col-lg-4 " for="plastic-waste">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                <span class="text-center"> Plastic Waste</span>
+    </div>
+    </div>
+    </label>
+
+    <label class="col-6 col-lg-4" for="hairdresser Waste">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <input id="hairdresser Waste" class="position-absolute" type="radio" value="Other Waste" name="other-waste" required hidden>
+                <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                <span class="text-center"> hairdresser Waste</span>
+    </div>
+    </div>
+    </label>
+
+    <label class="col-6 col-lg-4" for="recycle">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <input id="recycle" class="position-absolute" type="radio" value="recycle Waste" name="recycle-waste" required hidden>
+                <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                <span class="text-center"> recycling Waste</span>
+    </div>
+    </div>
+    </label>
+
+
+    <label class="col-6 col-lg-4" for="barber">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <input id="barber" class="position-absolute" type="radio" value="barber Waste" name="barber-waste" required hidden>
+                <input class="position-absolute" value="Other Waste" type="radio" name="other-waste" required>
+                <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                <span class="text-center"> Barber Waste</span>
+    </div>
+    </div>
+    </label>
+
+
+    <label class="col-6 col-lg-4" for="office-waste">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <input id="office-waste" class="position-absolute" type="radio" value="office waste" name="office-waste" required hidden>
+                <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                <span class="text-center"> Office Waste</span>
+    </div>
+    </div>
+    </label>
+
+
+    <label class="col-6 col-lg-4" for="general">
+        
+        <div class="p-2 h-100">
+            <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
+                <input id="general" class="position-absolute" value="General Waste" type="radio" name="general" required hidden>
+      <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/other-icon.png" alt=""> </span>
+      <span class="text-center"> General</span>
+    </div>
+    </div>
+    </label>
+
+
+</div>
+
+</div>
+<button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
+    </div>
+   
+      
+
+    <div class="step " style="min-width:100%; ">
+        <div class="text-center dark-blue-text py-3">
+          <h1>
+          Step 2
+          </h1>
+  <div>bar goes here</div>
+  
+  <p> what type of what would you like to disspose of? </p>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+      <label class="col-6 col-lg-4" for="plastic">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="plastic" class="position-absolute" type="radio" name="step-2" required hidden>
+                  <span class="text-center"> Plastic Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="hairdresser">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="hairdresser" class="position-absolute" type="radio" name="step-2" required hidden>
+                  <span class="text-center"> hairdresser Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="recycle">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="recycle" class="position-absolute" type="radio" name="step-2" required hidden>
+                  <span class="text-center"> recycling Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="BarberW">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="BarberW" class="position-absolute" type="radio" name="step-2" required hidden>
+                  <span class="text-center">Barber Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="OfficeW">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="OfficeW" class="position-absolute" type="radio" name="step-2" required hidden>
+                  <span class="text-center"> Office Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="General1">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
+                  <input id="General1" class="position-absolute" type="radio" name="step-2" required hidden>
+        <span class="text-center"> General</span>
+      </div>
+      </div>
+      </label>
+  
+  
+  </div>
+  <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
+  <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> back</button>
+  </div>
+ 
+      </div>
+
+      <div class="step " style="min-width:100%; ">
+        <div class="text-center dark-blue-text py-3">
+          <h1>
+          Step 3
+          </h1>
+  <div>bar goes here</div>
+  
+  <p> what type of what would you like to disspose of? </p>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+      <label class="col-6 col-lg-4 " for="waste">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste" class="position-absolute" type="radio" name="waste-type" required hidden>
+                  <span> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/240l-bin-thumb.webp" alt=""> </span>
+                  <span> Plastic Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="waste1">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste1" class="position-absolute" type="radio" name="waste-type" required hidden>
+                  <span class="d-block d-md-inline"> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/360l-bin-thumb.webp" alt=""> </span>
+                  <span class="text-center"> hairdresser Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="waste2">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste2" class="position-absolute" type="radio" name="waste-type" required hidden>
+                  <span class="d-block d-md-inline"> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/660l-bin-thumb.webp" alt=""> </span>
+                  <span class="text-center"> recycling Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="waste3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste3" class="position-absolute" type="radio" name="waste-type" required hidden>
+                  <span class="d-block d-md-inline" > <img  style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/660l-bin-thumb.webp" alt=""> </span>
+                  <span class="text-center"> Barber Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="waste4">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste4" class="position-absolute" type="radio" name="waste-type" required hidden>
+                  <span class="d-block d-md-inline"> <img style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/fel-container-thumb.webp" alt=""> </span>
+                  <span class="text-center"> Office Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="waste5">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 h-100">
+                  <input id="waste5" class="position-absolute" type="radio" name="waste-type" required hidden>
+        <span class="d-block d-md-inline"> <img style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/roro-img-thumb.webp" alt=""> </span>
+        <span class="text-center"> General</span>
+      </div>
+      </div>
+      </label>
+  
+  
+  </div>
+  
+  </div>
+  <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
+  <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> back</button>
+      </div>
+
+
+      <div class="step " style="min-width:100%; ">
+        <div class="text-center dark-blue-text py-3">
+          <h1>
+          Get a free quote
+          </h1>
+  <div>bar goes here</div>
+  
+  <p> what type of what would you like to disspose of? </p>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+      <label class="col-6 col-lg-4" for="plastic2">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="plastic2" class="position-absolute" type="radio" name="step-4" required hidden>
+                  <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                  <span class="text-center"> Plastic Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="hairdresser3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="hairdresser3" class="position-absolute" type="radio" name="step-4" required hidden>
+                  <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                  <span class="text-center"> hairdresser Waste</span>
+      </div>
+      </div>
+      </label>
+  
+      <label class="col-6 col-lg-4" for="recycle3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="recycle3" class="position-absolute" type="radio" name="step-4" required hidden>
+                  <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                  <span class="text-center"> recycling Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="Barber3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="Barber3" class="position-absolute" type="radio" name="step-4" required hidden>
+                  <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                  <span class="text-center"> Barber Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="Office3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                  <input id="Office3" class="position-absolute" type="radio" name="step-4" required hidden>
+                  <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
+                  <span class="text-center"> Office Waste</span>
+      </div>
+      </div>
+      </label>
+  
+  
+      <label class="col-6 col-lg-4" for="general3">
+          
+          <div class="p-2 h-100">
+              <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
+                  <input id="general3" class="position-absolute" type="radio" name="step-4" required hidden>
+        <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/other-icon.png" alt=""> </span>
+        <span class="text-center"> General</span>
+      </div>
+      </div>
+      </label>
+  
+  </div>
+  
+  <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
+  <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> back</button>
+  </div>
+
+      </div>
+
+
+      <div class="step " style="min-width:100%; ">
+        <div class="text-center dark-blue-text py-3">
+          <h1>
+          Step 5
+          </h1>
+  <div>bar goes here</div>
+  
+  <p> Your company details </p>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+      <label class="col-lg-6" for="">
+          
+        <span class="mb-2 d-block"> Company Name </span>
+              <div class="bg-white ">
+      
+                <input class="d-block py-2 w-100" type="text" name="other-waste" required>
+              
+      
+      </div>
+      </label>
+  
+      <label class="col-lg-6" for="">
+        <span class="mb-2 d-block"> Postcode </span>
+        
+              <div class="bg-white ">
+                 
+                  <input class="d-block py-2 w-100" type="text" name="other-waste" required>
+                  
+     
+      </div>
+      </label>
+  
+    
+
+  </div>
+  
+  </div>
+  <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
+  <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> back</button>
+
+      </div>
+
+
+      <div class="step " style="min-width:100%; ">
+        <div class="text-center dark-blue-text py-3">
+          <h1>
+        
+          </h1>
+  <div>bar goes here</div>
+  
+  <p class="fw-bold"> Your personal details </p>
+  </div>
+  <div class="container-fluid">
+  <div class="row">
+      <label class="col-lg-6 " for="">
+          
+        <span class="mb-2 d-block"> First Name </span>
+              <div class="bg-white ">
+      
+                <input class="d-block py-2 w-100" type="text" name="first-name" placeholder="First Name" required>
+              
+      
+      </div>
+      </label>
+  
+      <label class="col-lg-6 " for="">
+        <span class="mb-2 d-block"> Last Name </span>
+        
+              <div class="bg-white ">
+                 
+                  <input class="d-block py-2 w-100" type="text" name="last-name" placeholder="Last Name" required>
+                  
+     
+      </div>
+      </label>
+  
+      <label class="col-lg-6 " for="">
+        <span class="mb-2 d-block"> Phone Number </span>
+        
+              <div class="bg-white ">
+                 
+                <input class="d-block py-2 w-100" type="text" name="Phone" placeholder="Phone Number">
+                  
+     
+      </div>
+      </label>
+
+      <label class="col-lg-6 " for="">
+        <span class="mb-2 d-block"> Email Address </span>
+        
+              <div class="bg-white ">
+                 
+                  <input class="d-block py-2 w-100" type="text" name="EmailAddress" placeholder="Email Address">
+                  
+     
+      </div>
+      </label>
+
+  </div>
+  
+  </div>
+  <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward"> Request a Quote</button>
+  <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> Go Back</button>
+
+      </div>
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+  
+  </div> <!-- closing slider-->
+
+</div>
+
+
+
+
+
+
+
+
+  </form>
+   
+</div>
+
+<script>
+    const slider = document.querySelector('.slider');
+    const steps = document.querySelectorAll('.step');
+    let currentStep = 0;
+  
+    let forward= document.querySelectorAll('.forward');
+    let backward= document.querySelectorAll('.backward');
+  
+    
+
+    forward.forEach((next) => {
+    next.addEventListener('click', () => {
+
+    const inputs = steps[currentStep].querySelectorAll('input[required]');
+  
+
+    let empty = false;
+    inputs.forEach((input)=> {
+        if (input.type === "radio") {
+            const selectedRadio = steps[currentStep].querySelector('input[type="radio"]:checked');
+  
+           
+            if(!selectedRadio){
+              empty=true; 
+            }
+
+            
+        }
+
+       if(input.type==="text") {
+        if(input.value.trim() ==="") {
+           alert("fdffd");
+         empty = true;
+        }
+       }
+        
+    } )
+
+
+        if(currentStep< steps.length-1 && !empty) {
+        currentStep++;
+        slider.style.transform = 'translateX(-' + (100 * currentStep) + '%)';
+        }
+    });
+});
+
+
+backward.forEach((back) => {
+    back.addEventListener('click', () => {
+        if(currentStep>0) {
+        currentStep--;
+        slider.style.transform = 'translateX(-' + (100 * currentStep) + '%)';
+        }
+    });
+});
+
+      
+  </script>
+
+<section>
+
+    <div class="container mt-5">
+        
+      <div class="row p-2 p-md-5  ">
+        
+        <div class="col-md-6 col-12 order-2 order-md-1 ">
+            
+            <img class="w-100" src="https://betterwaste.co.uk/wp-content/uploads/2024/07/woman-putting-garbage-in-recycle-bin.png" alt="">
+        </div>
+        <div class="col-md-6 col-12 bg-white order-1 order-md-2 box-shadow"> 
+            <div class="p-3 p-md-5 dark-blue-text fw-bold">
+            <h2 style="text-align: center; ">Want to Speak
+                to one of our team?</h2>
+     <form  action="index.html">
+    <div class="row mt-3 gap-3 gap-md-0"> 
+        <div class="col-md-6 col-12 ">
+             <input  class="w-100 form-input-border-style form-input-height border-raidus custom-input" type="text" name="name" id="name" placeholder="First Name"> 
+            </div>
+        <div class="col-md-6 col-12 "> 
+            <input class="w-100 form-input-border-style form-input-height border-raidus custom-input" type="text" name="email" id="email" placeholder="Last Name"> 
+
+        </div>
+    </div>
+
+    <div class="row mt-3 gap-3 gap-md-0"> 
+        <div class="col-md-6 col-12 ">
+             <input class="w-100 form-input-border-style form-input-height border-raidus custom-input" type="text" name="typ" id="typ" placeholder="Email"> 
+            </div>
+        <div class="col-md-6 col-12 "> 
+            <input class="w-100 form-input-border-style form-input-height border-raidus custom-input" type="text" name="spike" id="spike" placeholder="Phone Number"> 
+
+        </div>
+    </div>
+
+    <div class="row mt-3 gap-3 "> 
+        <div class="col-12 ">
+                <textarea class="w-100 form-input-border-style border-black custom-input" id="message" name="message" rows="9" placeholder="Type your message here."></textarea>
+                
+            </div>
+      <div class="col-12">
+        <input class="w-100 py-3 green-button" type="submit">
+      </div>
+    </div>
+
+     </form>
+
+      </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+    </main>
+
+    <footer class="grey-background pt-4 pt-lg-0">
+<div class="footer-wrapper d-none d-lg-block" style="line-height: 32px;">
+        <div class="container d-none d-lg-block ">
+            <div class="row ">
+                <div class="col-3 " > 
+                <h1 class="dark-blue-text"> quicklinks</h1>
+                <ul class="list-unstyled">
+                    <li>Contact Us</li>
+                    <li>Helpline</li>
+                    <li>Facebook</li>
+                   
+                </ul>
+                </div>
+                <div class="col-4 " > 
+                    <h1 class="dark-blue-text"> Contact Us</h1>
+                    <p>Metropolitan House Longrigg Road 
+                        Swalwell Gateshead NE16 3AS</p>
+                        <p class="fw-bold">0330 390 7540</p>
+                        <a> info@betterwate.com</a>
+                        <div class="d-flex gap-3">
+                            <div>dds</div>
+                            <div>dds</div>
+                        </div>
+                </div>
+                <div class="col-3 " > 
+                    <h1 class="dark-blue-text"> Need a Quote </h1>
+                    <p>Cheaper always isnt better</p>
+                    <button class=" green-button py-3 px-5">Request A Quote</button>
+
+                </div>
+                <div class="col-2 " > 
+<img src="https://betterwaste.co.uk/wp-content/uploads/2024/07/footer-logo.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-block d-lg-none">
+       
+        <div class="px-3">
+     
+       <div style="border-bottom: 1px solid #000;"  onclick="showText(this)" class="d-flex"> <p class="fw-bold dark-blue-text me-auto mb-0">Quicklinks</p> <p class="grey-text">+</p>  </div>
+        <p class="max-height-0 mb-0">content</p>
+  
+</div>
+
+<div class="px-3">
+     
+    <div style="border-bottom: 1px solid #000;"  onclick="showText(this)" class="d-flex"> <p class="fw-bold dark-blue-text me-auto mb-0">Contatct us</p> <p>+</p>  </div>
+     <p class="max-height-0 mb-0">content</p>
+
+</div>
+
+<div class="d-flex align-items-center pb-4 pt-2">
+
+    <div>
+        <img src="https://betterwaste.co.uk/wp-content/uploads/2024/07/footer-logo.png" alt="">
+    </div>
+
+    <div class="ms-auto">
+        <i class="fa-brands fa-facebook-f mb-0"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</div>
+
+<script>
+    function showText(element){
+  let target= element.nextElementSibling;
+  target.classList.toggle('max-height-0');
+  
+  target.classList.contains("max-height-0") 
+  ? element.lastElementChild.textContent = "+" 
+  : element.lastElementChild.textContent = "-";
+  
+    }
+</script>
+
+
+</div>
+    <div class="copyright text-center pt-4 light-grey-text" style="border-top: 1px solid grey; "> 
+      <p class="mb-md-0"> © Copyrights 2024 All Rights Reserved Better Waste Solutions | About Us | Privacy Policy </p>
+    </div>
+    </footer>
+    
+</body>
+</html>
