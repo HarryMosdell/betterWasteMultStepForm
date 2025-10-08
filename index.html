@@ -149,7 +149,15 @@ element.firstElementChild.classList.toggle('d-none');
      </div>
      </div>
     </nav>
+    <style>
+        input:checked + div{
+      background-color: #1ea19a!important;
+        }
 
+        .bar{
+            transition: 1s;
+        }
+              </style>
 </header>
 
     <main>
@@ -183,13 +191,13 @@ element.firstElementChild.classList.toggle('d-none');
 <div class="col-11 col-lg-6 m-auto overflow-hidden" style="background: #f3f4f6;">
 
   <form action="" method="POST">
- <div class="slider d-flex w-100" style="transition: transform 0.35s">  <!-- opening slider-->
-    <div class="step " style="min-width:100%; ">
+ <div class="slider d-flex w-100" style="transition: transform 0.4s">  <!-- opening slider-->
+    <div class="step" style="min-width:100%; ">
       <div class="text-center dark-blue-text py-3">
         <h1>
         Get a free quote
         </h1>
-<div>bar goes here</div>
+<div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
 
 <p> what type of what would you like to disspose of? </p>
 </div>
@@ -198,6 +206,8 @@ element.firstElementChild.classList.toggle('d-none');
     <label class="col-6 col-lg-4 p-0" for="plastic-waste">
         
         <div class="p-2 h-100">
+            <input id="plastic-waste" class="position-absolute" type="radio" value=" Waste" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
                 <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                 <span class="text-center"> Plastic Waste</span>
@@ -205,11 +215,13 @@ element.firstElementChild.classList.toggle('d-none');
     </div>
     </label>
 
-    <label class="col-6 col-lg-4 p-0" for="hairdresser Waste">
-        
+    <label class="col-6 col-lg-4 p-0" for="other-waste">
+
         <div class="p-2  h-100">
+            <input id="other-waste" class="position-absolute" type="radio" value="Other Waste" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                <input id="hairdresser Waste" class="position-absolute" type="radio" value="Other Waste" name="other-waste" required hidden>
+
                 <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                 <span class="text-center"> hairdresser Waste</span>
     </div>
@@ -217,10 +229,11 @@ element.firstElementChild.classList.toggle('d-none');
     </label>
 
     <label class="col-6 col-lg-4 p-0" for="recycle">
-        
+    
         <div class="p-2 h-100">
+            <input id="recycle" class="position-absolute" type="radio" value="recycle Waste" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                <input id="recycle" class="position-absolute" type="radio" value="recycle Waste" name="recycle-waste" required hidden>
                 <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                 <span class="text-center"> recycling Waste</span>
     </div>
@@ -231,9 +244,9 @@ element.firstElementChild.classList.toggle('d-none');
     <label class="col-6 col-lg-4 p-0" for="barber">
         
         <div class="p-2 h-100">
+            <input id="barber" class="position-absolute" type="radio" value="barber Waste" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                <input id="barber" class="position-absolute" type="radio" value="barber Waste" name="barber-waste" required hidden>
-                <input class="position-absolute" value="Other Waste" type="radio" name="other-waste" required>
                 <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                 <span class="text-center"> Barber Waste</span>
     </div>
@@ -241,11 +254,12 @@ element.firstElementChild.classList.toggle('d-none');
     </label>
 
 
-    <label class="col-6 col-lg-4 p-0" for="office-waste">
+    <label class="col-6 col-lg-4 p-0" for="office">
         
         <div class="p-2 h-100">
+            <input id="office" class="position-absolute" type="radio" value="office waste" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                <input id="office-waste" class="position-absolute" type="radio" value="office waste" name="office-waste" required hidden>
                 <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                 <span class="text-center"> Office Waste</span>
     </div>
@@ -256,8 +270,9 @@ element.firstElementChild.classList.toggle('d-none');
     <label class="col-6 col-lg-4 p-0" for="general">
         
         <div class="p-2 h-100">
+            <input id="general" class="position-absolute" value="General Waste" type="radio" name="waste-step-1" required hidden>
+
             <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
-                <input id="general" class="position-absolute" value="General Waste" type="radio" name="general" required hidden>
       <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/other-icon.png" alt=""> </span>
       <span class="text-center"> General</span>
     </div>
@@ -278,7 +293,7 @@ element.firstElementChild.classList.toggle('d-none');
           <h1>
           Step 2
           </h1>
-  <div>bar goes here</div>
+          <div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
   
   <p> what type of what would you like to disspose of? </p>
   </div>
@@ -287,8 +302,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="plastic">
           
           <div class="p-2 h-100">
+            <input id="plastic" class="position-absolute" type="radio" name="step-2" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="plastic" class="position-absolute" type="radio" name="step-2" required hidden>
                   <span class="text-center"> Plastic Waste</span>
       </div>
       </div>
@@ -297,29 +313,32 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="hairdresser">
           
           <div class="p-2 h-100">
+            <input id="hairdresser" class="position-absolute" type="radio" name="step-2" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="hairdresser" class="position-absolute" type="radio" name="step-2" required hidden>
                   <span class="text-center"> hairdresser Waste</span>
       </div>
       </div>
       </label>
   
-      <label class="col-6 col-lg-4 p-0" for="recycle">
+   
+  
+      <label class="col-6 col-lg-4 p-0" for="recycleWaste">
           
-          <div class="p-2 h-100">
-              <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="recycle" class="position-absolute" type="radio" name="step-2" required hidden>
-                  <span class="text-center"> recycling Waste</span>
-      </div>
-      </div>
-      </label>
+        <div class="p-2 h-100">
+          <input id="recycleWaste" class="position-absolute" type="radio" name="step-2" required hidden>
+
+            <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
+                <span class="text-center"> Recycled Waste</span>
+    </div>
+    </div>
+    </label>
   
   
       <label class="col-6 col-lg-4 p-0" for="BarberW">
-          
           <div class="p-2 h-100">
+            <input id="BarberW" class="position-absolute" type="radio" name="step-2" required hidden>
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="BarberW" class="position-absolute" type="radio" name="step-2" required hidden>
                   <span class="text-center">Barber Waste</span>
       </div>
       </div>
@@ -329,8 +348,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="OfficeW">
           
           <div class="p-2 h-100">
+            <input id="OfficeW" class="position-absolute" type="radio" name="step-2" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="OfficeW" class="position-absolute" type="radio" name="step-2" required hidden>
                   <span class="text-center"> Office Waste</span>
       </div>
       </div>
@@ -340,8 +360,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="General1">
           
           <div class="p-2 h-100">
+            <input id="General1" class="position-absolute" type="radio" name="step-2" required hidden>
+
               <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
-                  <input id="General1" class="position-absolute" type="radio" name="step-2" required hidden>
         <span class="text-center"> General</span>
       </div>
       </div>
@@ -360,7 +381,7 @@ element.firstElementChild.classList.toggle('d-none');
           <h1>
           Step 3
           </h1>
-  <div>bar goes here</div>
+          <div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
   
   <p> what type of what would you like to disspose of? </p>
   </div>
@@ -369,8 +390,8 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste">
           
           <div class="p-2 h-100">
+            <input id="waste" class="position-absolute" type="radio" name="waste-type" required hidden>
               <div class="bg-white py-4 h-100">
-                  <input id="waste" class="position-absolute" type="radio" name="waste-type" required hidden>
                   <span> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/240l-bin-thumb.webp" alt=""> </span>
                   <span> Plastic Waste</span>
       </div>
@@ -380,8 +401,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste1">
           
           <div class="p-2 h-100">
+            <input id="waste1" class="position-absolute" type="radio" name="waste-type" required hidden>
+
               <div class="bg-white py-4 h-100">
-                  <input id="waste1" class="position-absolute" type="radio" name="waste-type" required hidden>
                   <span class="d-block d-md-inline"> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/360l-bin-thumb.webp" alt=""> </span>
                   <span class="text-center"> hairdresser Waste</span>
       </div>
@@ -391,8 +413,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste2">
           
           <div class="p-2 h-100">
+            <input id="waste2" class="position-absolute" type="radio" name="waste-type" required hidden>
+
               <div class="bg-white py-4 h-100">
-                  <input id="waste2" class="position-absolute" type="radio" name="waste-type" required hidden>
                   <span class="d-block d-md-inline"> <img src="https://betterwaste.co.uk/wp-content/uploads/2024/08/660l-bin-thumb.webp" alt=""> </span>
                   <span class="text-center"> recycling Waste</span>
       </div>
@@ -403,8 +426,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste3">
           
           <div class="p-2 h-100">
+            <input id="waste3" class="position-absolute" type="radio" name="waste-type" required hidden>
+
               <div class="bg-white py-4 h-100">
-                  <input id="waste3" class="position-absolute" type="radio" name="waste-type" required hidden>
                   <span class="d-block d-md-inline" > <img  style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/660l-bin-thumb.webp" alt=""> </span>
                   <span class="text-center"> Barber Waste</span>
       </div>
@@ -415,8 +439,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste4">
           
           <div class="p-2 h-100">
+            <input id="waste4" class="position-absolute" type="radio" name="waste-type" required hidden>
+
               <div class="bg-white py-4 h-100">
-                  <input id="waste4" class="position-absolute" type="radio" name="waste-type" required hidden>
                   <span class="d-block d-md-inline"> <img style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/fel-container-thumb.webp" alt=""> </span>
                   <span class="text-center"> Office Waste</span>
       </div>
@@ -427,8 +452,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="waste5">
           
           <div class="p-2 h-100">
+            <input id="waste5" class="position-absolute" type="radio" name="waste-type" required hidden>
+
               <div class="bg-white py-4 h-100">
-                  <input id="waste5" class="position-absolute" type="radio" name="waste-type" required hidden>
         <span class="d-block d-md-inline"> <img style="max-width: 65px; max-height: 65px;" src="https://betterwaste.co.uk/wp-content/uploads/2024/08/roro-img-thumb.webp" alt=""> </span>
         <span class="text-center"> General</span>
       </div>
@@ -442,14 +468,14 @@ element.firstElementChild.classList.toggle('d-none');
   <button type="button" class="forward green-button d-block w-50 py-2 mt-3 m-auto" id="forward">  next</button>
   <button type="button" class="backward border-0 d-block w-50 py-2 mt-3 m-auto" id="backward"> back</button>
       </div>
-
+      
 
       <div class="step " style="min-width:100%; ">
         <div class="text-center dark-blue-text py-3">
           <h1>
           Get a free quote
           </h1>
-  <div>bar goes here</div>
+          <div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
   
   <p> what type of what would you like to disspose of? </p>
   </div>
@@ -458,8 +484,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="plastic2">
           
           <div class="p-2 h-100">
+            <input id="plastic2" class="position-absolute" type="radio" name="step-4" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="plastic2" class="position-absolute" type="radio" name="step-4" required hidden>
                   <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                   <span class="text-center"> Plastic Waste</span>
       </div>
@@ -469,8 +496,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="hairdresser3">
           
           <div class="p-2 h-100">
+            <input id="hairdresser3" class="position-absolute" type="radio" name="step-4" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="hairdresser3" class="position-absolute" type="radio" name="step-4" required hidden>
                   <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                   <span class="text-center"> hairdresser Waste</span>
       </div>
@@ -480,8 +508,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="recycle3">
           
           <div class="p-2 h-100">
+            <input id="recycle3" class="position-absolute" type="radio" name="step-4" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="recycle3" class="position-absolute" type="radio" name="step-4" required hidden>
                   <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                   <span class="text-center"> recycling Waste</span>
       </div>
@@ -492,8 +521,8 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="Barber3">
           
           <div class="p-2 h-100">
+            <input id="Barber3" class="position-absolute" type="radio" name="step-4" required hidden>
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="Barber3" class="position-absolute" type="radio" name="step-4" required hidden>
                   <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                   <span class="text-center"> Barber Waste</span>
       </div>
@@ -504,8 +533,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="Office3">
           
           <div class="p-2 h-100">
+            <input id="Office3" class="position-absolute" type="radio" name="step-4" required hidden>
+
               <div class="bg-white py-4 d-flex flex-column align-items-center h-100">
-                  <input id="Office3" class="position-absolute" type="radio" name="step-4" required hidden>
                   <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/steps/images/general-icon.png" alt=""> </span>
                   <span class="text-center"> Office Waste</span>
       </div>
@@ -516,8 +546,9 @@ element.firstElementChild.classList.toggle('d-none');
       <label class="col-6 col-lg-4 p-0" for="general3">
           
           <div class="p-2 h-100">
+            <input id="general3" class="position-absolute" type="radio" name="step-4" required hidden>
+
               <div class="bg-white py-4  d-flex flex-column align-items-center h-100">
-                  <input id="general3" class="position-absolute" type="radio" name="step-4" required hidden>
         <span class="d-block"> <img src="https://betterwaste.co.uk/wp-content/themes/betterwastewp/assets/images/other-icon.png" alt=""> </span>
         <span class="text-center"> General</span>
       </div>
@@ -538,7 +569,7 @@ element.firstElementChild.classList.toggle('d-none');
           <h1>
           Step 5
           </h1>
-  <div>bar goes here</div>
+          <div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
   
   <p> Your company details </p>
   </div>
@@ -582,7 +613,7 @@ element.firstElementChild.classList.toggle('d-none');
           <h1>
         
           </h1>
-  <div>bar goes here</div>
+          <div class="w-50 m-auto dark-blue-background"><div class="bar" style="height:10px;  background-color: #1ea19a;"> </div></div>
   
   <p class="fw-bold"> Your personal details </p>
   </div>
@@ -691,11 +722,32 @@ element.firstElementChild.classList.toggle('d-none');
     const slider = document.querySelector('.slider');
     const steps = document.querySelectorAll('.step');
     let currentStep = 0;
-  
+    let progressBar= document.querySelectorAll('.bar');
+
     let forward= document.querySelectorAll('.forward');
     let backward= document.querySelectorAll('.backward');
-  
+    const radioLabels = document.querySelectorAll('label input[type="radio"]');
+
+    radioLabels.forEach((label) => {
+        label.addEventListener('click', moveForward);
+    } );
     
+    
+    updateProgressBar();
+    
+    function updateProgressBar() {
+    progressBar.forEach((bar)=> {
+        bar.style.width = (currentStep + 1) * 16.66 + '%';
+        
+    } );
+   
+}
+
+    function moveForward() {
+        currentStep++;
+        slider.style.transform = 'translateX(-' + (100 * currentStep) + '%)';
+        updateProgressBar();
+    }
 
     forward.forEach((next) => {
     next.addEventListener('click', () => {
@@ -703,32 +755,31 @@ element.firstElementChild.classList.toggle('d-none');
     const inputs = steps[currentStep].querySelectorAll('input[required]');
   
 
-    let empty = false;
+    let empty = true;
     inputs.forEach((input)=> {
         if (input.type === "radio") {
             const selectedRadio = steps[currentStep].querySelector('input[type="radio"]:checked');
   
            
             if(!selectedRadio){
-              empty=true; 
+              empty=false; 
             }
-
             
         }
 
        if(input.type==="text") {
         if(input.value.trim() ==="") {
            alert("fdffd");
-         empty = true;
+         empty = false;
         }
        }
         
     } )
 
-
-        if(currentStep< steps.length-1 && !empty) {
-        currentStep++;
-        slider.style.transform = 'translateX(-' + (100 * currentStep) + '%)';
+  
+        if(currentStep< steps.length-1 && empty) {
+            moveForward();
+            updateProgressBar();
         }
     });
 });
@@ -739,6 +790,7 @@ backward.forEach((back) => {
         if(currentStep>0) {
         currentStep--;
         slider.style.transform = 'translateX(-' + (100 * currentStep) + '%)';
+        updateProgressBar();
         }
     });
 });
